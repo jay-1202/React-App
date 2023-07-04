@@ -1,0 +1,28 @@
+.section {
+    padding: 0px 50px;
+    background-color: #F9F5F6;
+}
+
+.section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-pic .raccoon {
+    width: 400px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D25380;
+}

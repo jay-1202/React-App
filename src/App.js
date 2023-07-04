@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import Header from "./Component/Header";
+import Footer from "./Component/Footer";
+import Home from "./Component/Home";
+import Task1 from "./Component/Task1"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header title="React@pp" />
+      {/* Changable Portion */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/task1" element={<Task1 />} />
+      </Routes>
+      <Footer title="React@pp" design="JC" />
+    </>
   );
 }
 
